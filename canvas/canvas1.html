@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="750" height="750" style="border: 2px solid black; background-color: black;"></canvas>
+    <script>
+         let c = document.getElementById("myCanvas");
+        let ctx = c.getContext("2d");
+         /*pravokutnik 
+        ctx.beginPath();
+        ctx.rect(0, 0, 250, 250);
+        ctx.fillStyle="red";
+        ctx.fill();
+        ctx.beginPath();
+        ctx.rect(250, 250, 250, 250);
+        ctx.fillStyle="white";
+        ctx.fill();
+        ctx.strokeStyle="black";
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.rect(500, 500, 250, 250);
+        ctx.fillStyle="blue";
+        ctx.fill(); */
+        ctx.beginPath();
+        ctx.arc(300, 250, 130, 0, 2*Math.PI); /* xpos, ypos, radijus, start angle, stop angle */
+        ctx.fillStyle="yellow";
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.arc(280, 180, 20, 0, 2*Math.PI); /* xpos, ypos, radijus, start angle, stop angle */
+        ctx.fillStyle="black";
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(285, 180, 8, 0, 2*Math.PI); /* xpos, ypos, radijus, start angle, stop angle */
+        ctx.fillStyle="white";
+        ctx.fill();
+         ctx.beginPath();
+       ctx.moveTo(300, 250);
+       ctx.lineTo(500, 350);
+       ctx.lineTo(500, 150);
+       ctx.fillStyle="black";
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(500, 250, 20, 0, 2*Math.PI); /* xpos, ypos, radijus, start angle, stop angle */
+        ctx.fillStyle="white";
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(600, 250, 20, 0, 2*Math.PI); /* xpos, ypos, radijus, start angle, stop angle */
+        ctx.fillStyle="white";
+        ctx.fill();
+        
+        
+    </script>
+</body>
+</html>
