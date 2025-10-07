@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG vjezba</title>
+    <style>
+        table,td{
+            border: 1px solid black;
+            padding: 3px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     <h2>SVG vjezba</h2>
@@ -14,8 +22,35 @@
                 <polygon points="200,200 280,340 120,340" fill="#2e8b57" stroke="#145c24" stroke-width="4"/>
                 
                 <rect x="170" y="340" width="60" height="50" fill="#8B5A2B" stroke="#654321" stroke-width="4"/>
-                
+              
         </svg>
+        <br>
+        <h3>Tablice</h3>
+        <table>
+            <tr>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Razred</th>
+            </tr>
+            <tr>
+                <td>Petar</td>
+                <td>Simić</td>
+                <td>3.E</td>
+            </tr>
+            <tr>
+                <td>Ivo</td>
+                <td>Horvat</td>
+                <td>4.A</td>
+            </tr>
+        </table>
+        <h3>Forme u HTML-u</h3>
+        <form action="#" method="get">
+            <label for="ime">Ime:</label>
+            <input type="text" id="ime" required> <br>
+            <label for="prezime">Prezime:</label>
+            <input type="text" id="prezime"> <br>
+            <input type="submit" value="Pošalji">
+        </form>
 
 </body>
 </html>
