@@ -21,6 +21,11 @@ h1 {
   font-size: 8rem;
   color: #4ECCA3;
 }
+h2{
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  color: #4ECCA3;
+}
 
 p {
   font-size: 2rem;
@@ -29,7 +34,7 @@ p {
 }
 
 img {
-  width: 80%;
+  width: 50%;
 }
 
 footer {
@@ -38,4 +43,9 @@ footer {
   text-align: center;
   font-family: 'Indie Flower', cursive;
 
+}
+button{
+  padding: 15px;
+  margin-left: 900px;
+  border-radius: 3px;
 }
