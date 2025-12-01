@@ -40,8 +40,51 @@ function NewGame(){
   randNumber = randomNumber();
   pokusaji = 0;
   updateAttempts();
-  msg.innerHTML = "Nova igra - pokušaj ponovno.";
+  msg.innerHTML = "Nova igra           - pokušaj ponovno.";
   msg.style.color = "black";
   input.focus();
    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
