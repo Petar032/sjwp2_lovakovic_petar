@@ -45,7 +45,7 @@ function NewGame(){
   input.focus();
    
 }
-
+document.querySelector("list1 a").setAttribute("href","https://ednevnik.hr");
 
 
 
