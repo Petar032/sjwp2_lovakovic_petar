@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektronični alati</title>
+</head>
+<body>
+
+<h1>Elektronični alati</h1>
+
+
+<h2>Ohmov zakon</h2>
+<table>
+    <tr>
+        <td>
+            <label for="r">Otpor R (Ω):</label>
+            <input id="r" type="number"><br><br>
+
+            <label for="u">Napon U (V):</label>
+            <input id="u" type="number"><br><br>
+
+            <button id="I">Izračunaj struju</button>
+            <p>Struja I: <span id="iRez">-</span> A</p>
+        </td>
+        <td>
+            <img src="./ohmov.png" alt="Ohmov zakon" width="400">
+        </td>
+    </tr>
+</table>
+<hr>
+
+
+<h2>Djelilo napona</h2>
+<table>
+    <tr>
+        <td>
+            <label for="r1">R1 (Ω):</label>
+            <input id="r1" type="number"><br><br>
+
+            <label for="r2">R2 (Ω):</label>
+            <input id="r2" type="number"><br><br>
+
+            <label for="uin">Uul (V):</label>
+            <input id="uin" type="number"><br><br>
+
+            <button id="Uiz">Izračunaj Uizlazno</button>
+            <p>Uiz: <span id="uRez">-</span> V</p>
+        </td>
+        <td>
+            <img src="./Napon.jpg" alt="Djelilo napona" width="400">
+        </td>
+    </tr>
+</table>
+<hr>
+
+
+<h2>Serijski spoj otpornika</h2>
+<table>
+    <tr>
+        <td>
+            <label for="rs1">R1 (Ω):</label>
+            <input id="rs1" type="number"><br><br>
+
+            <label for="rs2">R2 (Ω):</label>
+            <input id="rs2" type="number"><br><br>
+
+            <button id="ser">Izračunaj R serijski</button>
+            <p>Ukupni otpor: <span id="rSer">-</span> Ω</p>
+        </td>
+        <td>
+            <img src="./Serijski.png" alt="Serijski spoj" width="400">
+        </td>
+    </tr>
+</table>
+<hr>
+
+
+<h2>Paralelni spoj otpornika</h2>
+<table>
+    <tr>
+        <td>
+            <label for="rp1">R1 (Ω):</label>
+            <input id="rp1" type="number"><br><br>
+
+            <label for="rp2">R2 (Ω):</label>
+            <input id="rp2" type="number"><br><br>
+
+            <button id="par">Izračunaj R paralelni</button>
+            <p>Ukupni otpor: <span id="rPar">-</span> Ω</p>
+        </td>
+        <td>
+            <img src="./Paralelni.png" alt="Paralelni spoj" width="400">
+        </td>
+    </tr>
+</table>
+
+<script src="index.js" defer></script>
+
+</body>
+</html>
