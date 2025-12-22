@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elektronični alati</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  
+    
 <h1>Elektronični alati</h1>
-
 
 <h2>Ohmov zakon</h2>
 <table>
@@ -24,12 +25,12 @@
             <p>Struja I: <span id="iRez">-</span> A</p>
         </td>
         <td>
-            <img src="./ohmov.png" alt="Ohmov zakon" width="400">
+            <img src="./ohmov.png" width="400">
         </td>
     </tr>
 </table>
-<hr>
 
+<hr>
 
 <h2>Djelilo napona</h2>
 <table>
@@ -48,12 +49,12 @@
             <p>Uiz: <span id="uRez">-</span> V</p>
         </td>
         <td>
-            <img src="./Napon.jpg" alt="Djelilo napona" width="400">
+            <img src="./Napon.jpg" width="400">
         </td>
     </tr>
 </table>
-<hr>
 
+<hr>
 
 <h2>Serijski spoj otpornika</h2>
 <table>
@@ -69,12 +70,12 @@
             <p>Ukupni otpor: <span id="rSer">-</span> Ω</p>
         </td>
         <td>
-            <img src="./Serijski.png" alt="Serijski spoj" width="400">
+            <img src="./Serijski.png" width="400">
         </td>
     </tr>
 </table>
-<hr>
 
+<hr>
 
 <h2>Paralelni spoj otpornika</h2>
 <table>
@@ -90,11 +91,162 @@
             <p>Ukupni otpor: <span id="rPar">-</span> Ω</p>
         </td>
         <td>
-            <img src="./Paralelni.png" alt="Paralelni spoj" width="400">
+            <img src="./Paralelni.png" width="400">
         </td>
     </tr>
 </table>
 
+<hr>
+
+<h2>Serijski spoj kondenzatora</h2>
+<table>
+    <tr>
+        <td>
+            <label for="cs1">C1 (µF):</label>
+            <input id="cs1" type="number"><br><br>
+
+            <label for="cs2">C2 (µF):</label>
+            <input id="cs2" type="number"><br><br>
+
+            <button id="cser">Izračunaj C serijski</button>
+            <p>Ukupni kapacitet: <span id="cSer">-</span> µF</p>
+        </td>
+        <td>
+            <img src="./kond_ser.png" width="400">
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<h2>Paralelni spoj kondenzatora</h2>
+<table>
+    <tr>
+        <td>
+            <label for="cp1">C1 (µF):</label>
+            <input id="cp1" type="number"><br><br>
+
+            <label for="cp2">C2 (µF):</label>
+            <input id="cp2" type="number"><br><br>
+
+            <button id="cpar">Izračunaj C paralelni</button>
+            <p>Ukupni kapacitet: <span id="cPar">-</span> µF</p>
+        </td>
+        <td>
+            <img src="./kond_par.png" width="400">
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<h2>Serijski spoj zavojnica</h2>
+<table>
+    <tr>
+        <td>
+            <label for="l1">L1 (mH):</label>
+            <input id="l1" type="number"><br><br>
+
+            <label for="l2">L2 (mH):</label>
+            <input id="l2" type="number"><br><br>
+
+            <button id="lser">Izračunaj L serijski</button>
+            <p>Ukupna induktivnost: <span id="lSer">-</span> mH</p>
+        </td>
+        <td>
+            <img src="./zav_ser.jpg" width="400">
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<h2>Paralelni spoj zavojnica</h2>
+<table>
+    <tr>
+        <td>
+            <label for="lp1">L1 (mH):</label>
+            <input id="lp1" type="number"><br><br>
+
+            <label for="lp2">L2 (mH):</label>
+            <input id="lp2" type="number"><br><br>
+
+            <button id="lpar">Izračunaj L paralelni</button>
+            <p>Ukupna induktivnost: <span id="lPar">-</span> mH</p>
+        </td>
+        <td>
+            <img src="./zav_par.png" width="400">
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<h2>Zračna zavojnica - induktivitet</h2>
+<table>
+    <tr>
+        <td>
+            <label for="n">Broj zavoja N:</label>
+            <input id="n" type="number"><br><br>
+
+            <label for="rz">Polumjer r (cm):</label>
+            <input id="rz" type="number"><br><br>
+
+            <label for="lzInput">Duljina l (cm):</label>
+            <input id="lzInput" type="number"><br><br>
+
+            <button id="lz">Izračunaj L</button>
+
+            <p>Induktivitet: <span id="lRez">-</span> mH</p>
+        </td>
+        <td>
+            <img src="./zavz.jpg" width="400">
+        </td>
+    </tr>
+</table>
+<hr>
+
+<h2>Induktivni otpor</h2>
+<table>
+    <tr>
+        <td>
+            <label for="f">Frekvencija f (Hz):</label>
+            <input id="f" type="number"><br><br>
+
+            <label for="lr">Induktivitet L (H):</label>
+            <input id="lr" type="number"><br><br>
+
+            <button id="xLr">Izračunaj X<sub>L</sub></button>
+
+            <p>Induktivni otpor: <span id="xLRez">-</span> Ω</p>
+        </td>
+        <td>
+            <img src="./iotopr.jpg" width="400" height="300">
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<h2>Kapacitivni otpor</h2>
+<table>
+    <tr>
+        <td>
+            <label for="fC">Frekvencija f (Hz):</label>
+            <input id="fC" type="number"><br><br>
+
+            <label for="c">Kapacitet C (F):</label>
+            <input id="c" type="number"><br><br>
+
+            <button id="xCr">Izračunaj X<sub>C</sub></button>
+
+            <p>Kapacitivni otpor: <span id="xCRez">-</span> Ω</p>
+        </td>
+        <td>
+            <img src="./kapotp.png" width="400">
+        </td>
+    </tr>
+</table>
 <script src="index.js" defer></script>
 
 </body>
