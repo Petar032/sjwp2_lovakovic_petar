@@ -31,11 +31,6 @@ const lp1 = document.getElementById("lp1");
 const lp2 = document.getElementById("lp2");
 const lPar = document.getElementById("lPar");
 
-const n = document.getElementById("n");
-const rz = document.getElementById("rz");
-const lzInput = document.getElementById("lzInput");
-const lRez = document.getElementById("lRez");
-
 const f = document.getElementById("f");
 const lrez = document.getElementById("lr");
 const xLRez = document.getElementById("xLRez");
@@ -84,16 +79,21 @@ document.getElementById("lpar").onclick = function() {
         lPar.textContent = ((Number(lp1.value) * Number(lp2.value)) / (Number(lp1.value) + Number(lp2.value))).toFixed(2);
 };
 
-document.getElementById("lz").onclick = function () {
-    if (Number(n.value) > 0 && Number(rz.value) > 0 && Number(lzInput.value) > 0) {
+document.getElementById("btnInduktivitet").onclick = function () {
+
+    const N = Number(document.getElementById("namotaji").value);
+    const A = Number(document.getElementById("povrsina").value);
+    const l = Number(document.getElementById("duljina").value);
+
+    if (N > 0 && A > 0 && l > 0) {
         const mu0 = 4 * Math.PI * 1e-7;
-        const r = Number(rz.value) / 100;
-        const l = Number(lzInput.value) / 100;
-        const A = Math.PI * r * r;
-        const L = mu0 * (Number(n.value) ** 2) * A / l;
-        lRez.textContent = (L * 1000).toFixed(4);
+        const L = (mu0 * N * N * A) / l;
+        const L_mH = L * 1000000;
+        document.getElementById("rezInduktivitet").textContent =
+            L_mH.toFixed(3);
     }
 };
+
 
 
 document.getElementById("xLr").onclick = function() {

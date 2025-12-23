@@ -182,28 +182,30 @@
 
 <hr>
 
-<h2>Zračna zavojnica - induktivitet</h2>
+<h2>Zračna zavojnica – induktivitet</h2>
+
 <table>
     <tr>
         <td>
-            <label for="n">Broj zavoja N:</label>
-            <input id="n" type="number"><br><br>
+            <label>Broj namotaja (N):</label><br>
+            <input type="number" id="namotaji"><br><br>
 
-            <label for="rz">Polumjer r (cm):</label>
-            <input id="rz" type="number"><br><br>
+            <label>Površina presjeka (A) [m²]:</label><br>
+            <input type="number" id="povrsina"><br><br>
 
-            <label for="lzInput">Duljina l (cm):</label>
-            <input id="lzInput" type="number"><br><br>
+            <label>Duljina zavojnice (l) [m]:</label><br>
+            <input type="number" id="duljina"><br><br>
 
-            <button id="lz">Izračunaj L</button>
+            <button id="btnInduktivitet">Izračunaj L</button>
 
-            <p>Induktivitet: <span id="lRez">-</span> mH</p>
+            <p>Induktivitet: <span id="rezInduktivitet">-</span> H</p>
         </td>
         <td>
             <img src="./zavz.jpg" width="400">
         </td>
     </tr>
 </table>
+
 <hr>
 
 <h2>Induktivni otpor</h2>
