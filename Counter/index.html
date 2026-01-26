@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        ;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        button {
+            padding: 20px 30px;
+            font-size: 30px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        #counter {
+            font-size: 40px;
+            font-weight: bold;
+            width: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <button id="minus">-</button>
+        <div id="counter">0</div>
+        <button id="plus">+</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

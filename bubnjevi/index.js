@@ -59,4 +59,3 @@ function buttonAnimation(currentKey){
         activeButton.classList.remove("pressed");
     }, 100);
 }
-
