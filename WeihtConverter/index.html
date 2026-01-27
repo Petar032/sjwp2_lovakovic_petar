@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KG Converter</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        input, button {
+            height: 30px;
+            font-size: 18px;
+            width: 220px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 40px;
+            background-color: #b4aeae;
+            color: white;
+        }
+
+        #pounds {
+            background-color: rgb(50, 50, 198);
+            width: 200px;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+
+        #ounces {
+            background-color: rgb(43, 179, 43);
+             width: 200px;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+
+        #grams {
+            background-color: rgb(177, 28, 28);
+             width: 200px;
+            height: 30px;
+        }
+        h1{
+            color: white;
+        }
+    </style>          
+</head>
+<body>
+   <h1>Weight Converter</h1>
+    <input type="number" id="kg">
+    <button id="go">Go</button>
+
+    <div id="pounds">Pounds:</div>
+    <div id="ounces">Ounces:</div>
+    <div id="grams">Grams:</div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

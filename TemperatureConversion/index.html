@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius Converter</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        input {
+            height: 40px;
+            font-size: 18px;
+            width: 220px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        #fahrenheit, #kelvin {
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+       <h1>Temperature Converter</h1>
+    <input type="number" id="celsius">
+
+    <div  id="fahrenheit">Fahrenheit: </div>
+    <div  id="kelvin">Kelvin: </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTC Converter</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        input, button {
+            height: 40px;
+            font-size: 18px;
+            width: 220px;
+            border-radius: 8px;
+            margin: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+
+    <input type="number" id="btc" >
+    <button id="convert">Convert</button>
+
+    <div class="result" id="eur">EUR: </div>
+    <div class="result" id="usd">USD: </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
