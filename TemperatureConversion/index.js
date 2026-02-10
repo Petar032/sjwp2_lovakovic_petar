@@ -8,3 +8,4 @@ document.getElementById("celsius").oninput = function () {
     fahrenheit.textContent = "Fahrenheit: " + (c * 9/5 + 32).toFixed(2);
     kelvin.textContent = "Kelvin: " + (Number(c) + 273.15).toFixed(2);
 };
+       
