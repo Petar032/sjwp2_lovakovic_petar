@@ -8,26 +8,27 @@ import inquirer from 'inquirer';
 import qr from 'qr-image';
 import fs from 'fs';
 
-const questions = [
+inquirer
+  .prompt([
     {
-        type: 'input',
-        name: 'url',
-        message: 'Enter a URL to generate a QR code:'
+        message:"Unesi URL:",
+        name:"URL"
     }
-];
+  ])
+  .then(answers => {
+    const url = answers.URL;
+    var gr_png = qr.image(url);
+    gr_png.pipe(fs.createWriteStream('gr_img.png'));
 
-inquirer.prompt(questions).then(answers => {
-    const url = answers.url;
-    
-    // Generate QR code
-    const qrCode = qr.image(url, { type: 'png' });
-    
-    // Save QR code image
-    qrCode.pipe(fs.createWriteStream('qrcode.png'));
-    
-    // Save URL to a text file
-    fs.writeFile('url.txt', url, (err) => {
+    fs.writeFile('URL.txt', url, (err) => {
         if (err) throw err;
-        console.log('URL saved to url.txt');
-    });
-});
+        console.log("Datoteka je sacuvana");
+    })
+  })
+  .catch(error => {
+    if(error.isTtyError) {
+        console.log("Prompt couldn't be rendered in the current environment");
+    } else {
+        console.log("Something went wrong");
+    }
+  });

@@ -1,0 +1,3 @@
+Duljina: 5
+Širina: 3
+Površina pravokutnika: 15
