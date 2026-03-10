@@ -23,4 +23,4 @@ inquirer.prompt([
   fs.writeFileSync("users.txt", username);
 
   console.log("Korisničko ime je spremljeno u users.txt");
-});
+}); 
