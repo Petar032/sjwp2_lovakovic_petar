@@ -1,0 +1,154 @@
+/* Osnovni stilovi */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, #141414, #1f1f1f);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+
+.logo {
+  color: #e50914;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.links a {
+  margin-left: 25px;
+  color: #ccc;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: #fff;
+}
+
+/* Glavni container */
+.container {
+  padding: 20px 40px;
+}
+
+/* Naslovi sekcija */
+h2 {
+  margin-bottom: 15px;
+}
+
+/* Grid kartica */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Kartice */
+.card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #111;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(255,255,255,0.2);
+}
+
+/* Slike kartica – sve iste veličine, cijela vidljiva */
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain; /* cijela slika vidljiva */
+  display: block;
+  background: #000;    /* za slike s bijelom pozadinom */
+}
+
+/* Tekst preko slike */
+.card p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background: rgba(0,0,0,0.6); /* poluprozirna crna pozadina */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Modal overlay */
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Modal sadržaj */
+.modal-content {
+  background: #111;
+  padding: 25px 20px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Zatvaranje modala */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  color: #e50914;
+}
+
+/* Modal tekst */
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* Responsive za manje ekrane */
+@media (max-width: 600px) {
+  .card img {
+    height: 200px;
+  }
+
+  .modal-content {
+    padding: 20px;
+  }
+}

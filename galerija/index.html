@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerija</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">GALERIJA</div>
+    <div class="links">
+      <a href="#filmovi-section">Filmovi</a>
+      <a href="#serije-section">Serije</a>
+      <a href="#dokumentarci-section">Dokumentarci</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Filmovi -->
+    <section id="filmovi-section">
+      <h2>Filmovi</h2>
+      <div class="grid">
+
+        <div class="card" onclick="openModal('Bad Boys: Ride or Die','Will Smith, Martin Lawrence, Vanessa Hudgens','Detektivi Mike i Marcus suočavaju se s najvećom prijetnjom do sada dok pokušavaju očistiti svoje ime i razotkriti korupciju unutar policije.')">
+          <img src="slike/BadBoys.jpg" alt="Bad Boys">
+          <p>Bad Boys: Ride or Die</p>
+        </div>
+
+        <div class="card" onclick="openModal('Snajperist','Tom Berenger, Billy Zane, Chad Michael Collins','Iskusni snajperist dobiva opasnu misiju eliminacije mete iza neprijateljskih linija, gdje mora koristiti preciznost i strategiju za preživljavanje.')">
+          <img src="slike/snajperist.jpg" alt="Snajperist">
+          <p>Snajperist</p>
+        </div>
+
+        <div class="card" onclick="openModal('Sicario: Day of the Soldado','Benicio del Toro, Josh Brolin, Isabela Merced','Rat protiv narkokartela eskalira kada američke vlasti pokreću tajnu operaciju koja dovodi do brutalnih posljedica na granici.')">
+          <img src="slike/sicario.jpg" alt="Sicario">
+          <p>Sicario: Day of the Soldado</p>
+        </div>
+
+        <div class="card" onclick="openModal('Peaky Blinders: The Immortal Man','Cillian Murphy, Paul Anderson, Sophie Rundle','Tommy Shelby se suočava s novim neprijateljima i vlastitom prošlošću dok pokušava proširiti svoju moć i zaštititi obitelj.')">
+          <img src="./slike/Peaky Blinders.jpg" alt="Peaky Blinders">
+          <p>Peaky Blinders: The Immortal Man</p>
+        </div>
+
+        <div class="card" onclick="openModal('Extraction 2','Chris Hemsworth, Golshifteh Farahani, Adam Bessa','Plaćenik Tyler Rake vraća se iz mrtvih za još jednu smrtonosnu misiju spašavanja, suočavajući se s brutalnim neprijateljima.')">
+          <img src="slike/extraction2.jpg" alt="Extraction 2">
+          <p>Extraction 2</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Serije -->
+    <section id="serije-section">
+      <h2>Serije</h2>
+      <div class="grid">
+
+        <div class="card" onclick="openModal('Breaking Bad','Bryan Cranston','Profesor postaje diler.')">
+          <img src="https://via.placeholder.com/300x450" alt="Breaking Bad">
+          <p>Breaking Bad</p>
+        </div>
+
+       
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">✖</span>
+      <h2 id="modalTitle"></h2>
+      <p><strong>Glumci:</strong> <span id="modalActors"></span></p>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

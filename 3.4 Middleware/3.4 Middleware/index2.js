@@ -8,8 +8,7 @@ app.use(morgan("tiny"));
 
 app.get("/", (req, res) => {
   res.send("Hello");
-});
-
+});    
 app.listen(port, "127.0.0.1", () => {
   console.log(`Listening on port ${port}`);
 });
