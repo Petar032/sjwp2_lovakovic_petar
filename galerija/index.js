@@ -9,7 +9,6 @@ function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
 
-// Close modal when clicking outside content
 window.onclick = function(e) {
   if (e.target.id === "modal") closeModal();
 };

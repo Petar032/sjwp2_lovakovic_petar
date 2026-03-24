@@ -1,4 +1,4 @@
-/* Osnovni stilovi */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,7 +6,7 @@ body {
   color: white;
 }
 
-/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -37,24 +37,24 @@ body {
   color: #fff;
 }
 
-/* Glavni container */
+
 .container {
   padding: 20px 40px;
 }
 
-/* Naslovi sekcija */
+
 h2 {
   margin-bottom: 15px;
 }
 
-/* Grid kartica */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
-/* Kartice */
+
 .card {
   position: relative;
   cursor: pointer;
@@ -69,16 +69,16 @@ h2 {
   box-shadow: 0 5px 20px rgba(255,255,255,0.2);
 }
 
-/* Slike kartica – sve iste veličine, cijela vidljiva */
+
 .card img {
   width: 100%;
   height: 300px;
-  object-fit: contain; /* cijela slika vidljiva */
+  object-fit: contain; 
   display: block;
-  background: #000;    /* za slike s bijelom pozadinom */
+  background: #000;    
 }
 
-/* Tekst preko slike */
+
 .card p {
   position: absolute;
   bottom: 0;
@@ -86,7 +86,7 @@ h2 {
   width: 100%;
   margin: 0;
   padding: 10px;
-  background: rgba(0,0,0,0.6); /* poluprozirna crna pozadina */
+  background: rgba(0,0,0,0.6); 
   color: white;
   text-align: center;
   font-weight: bold;
@@ -94,7 +94,7 @@ h2 {
   box-sizing: border-box;
 }
 
-/* Modal overlay */
+
 #modal {
   display: none;
   position: fixed;
@@ -110,7 +110,7 @@ h2 {
   box-sizing: border-box;
 }
 
-/* Modal sadržaj */
+
 .modal-content {
   background: #111;
   padding: 25px 20px;
@@ -122,7 +122,7 @@ h2 {
   box-sizing: border-box;
 }
 
-/* Zatvaranje modala */
+
 .close {
   position: absolute;
   top: 10px;
@@ -132,7 +132,7 @@ h2 {
   color: #e50914;
 }
 
-/* Modal tekst */
+
 .modal-content h2 {
   margin-top: 0;
 }
@@ -142,7 +142,7 @@ h2 {
   line-height: 1.5;
 }
 
-/* Responsive za manje ekrane */
+
 @media (max-width: 600px) {
   .card img {
     height: 200px;
